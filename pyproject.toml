@@ -4,7 +4,7 @@ version = "2023.1.0"
 description = "A simple? script to display routes in Django"
 authors = ["David Nugent <davidn@uniquode.io>"]
 readme = "README.md"
-packages = [{include = "django_routes"}]
+packages = [{include = "routes"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
