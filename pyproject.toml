@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-routes"
+version = "2023.1.0"
+description = "A simple? script to display routes in Django"
+authors = ["David Nugent <davidn@uniquode.io>"]
+readme = "README.md"
+packages = [{include = "django_routes"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = ">= 3.1, >= 4.1"
+django-extensions = ">= 3.2"
+django-settings-env = ">= 4.3"
+
+[tool.poetry.scripts]
+routes = "routes.routes.py:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
