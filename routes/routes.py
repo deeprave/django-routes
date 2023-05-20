@@ -21,7 +21,7 @@ def main():
         elif len(manage_scripts) > 1:
             print('Found multiple manage.py scripts', file=sys.stderr)
             exit(1)
-        django_root = manage_scripts[0]
+        django_root = manage_scripts[0].parent
     django_root_str = django_root.as_posix()
     if django_root_str not in sys.path:
         sys.path.append(django_root_str)

@@ -13,7 +13,7 @@ django-extensions = ">= 3.2"
 django-settings-env = ">= 4.3"
 
 [tool.poetry.scripts]
-routes = "routes.routes.py:main"
+routes = "routes.routes:main"
 
 [build-system]
 requires = ["poetry-core"]
