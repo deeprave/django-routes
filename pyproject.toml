@@ -1,26 +1,21 @@
-[tool.poetry]
+[project]
 name = "django-routes"
-version = "2023.2.0"
+version = "2024.1.0"
 description = "A simple? script to display routes in Django"
-authors = ["David Nugent <davidn@uniquode.io>"]
+authors = [
+  { name = "David Nugent", email = "davidn@uniquode.io" }
+]
 readme = "README.md"
+license = {text = "MIT"}
 packages = [{include = "routes"}]
-
-[tool.poetry.dependencies]
-python = "^3.9"
-django = ">= 3.1, >= 4.1"
-django-extensions = ">= 3.2"
-django-settings-env = ">= 4.3"
-
-[tool.poetry.scripts]
-routes = "routes.routes:main"
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^3.3.3"
-black = "^23.7.0"
-isort = "^5.12.0"
-ruff = "^0.0.285"
+requires-python = ">=3.10"
+dependencies = [
+  "django >= 4.1",
+  "django-extensions >= 3.2",
+  "django-settings-env >= 4.3"
+]
+scripts = { routes = "django_routes.routes:main" }
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["flit-core"]
+build-backend = "flit_core.buildapi"
