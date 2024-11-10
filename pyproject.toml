@@ -1,6 +1,6 @@
 [project]
 name = "django-routes"
-version = "2024.1.0"
+version = "2024.2.0"
 description = "A simple? script to display routes in Django"
 authors = [
   { name = "David Nugent", email = "davidn@uniquode.io" }
